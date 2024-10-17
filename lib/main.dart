@@ -8,7 +8,16 @@ void main() {
         backgroundColor: Colors.brown[600],
         centerTitle: true,
       ),
-      body: const Text('Welcome to my coffee shop'),
+      body: const Home(),
     )
   ));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text('My Coffee Shop');
+  }
 }
